@@ -61,11 +61,6 @@
 			"cr": "1/4",
 			"shortName": "Frostie",
 			"page": 68,
-			"languages": [
-				"Common",
-				"Elvish",
-				"Sylvan"
-			],
 			"skill": {
 				"perception": "+3",
 				"stealth": "+8"
