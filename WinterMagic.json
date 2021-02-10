@@ -1,0 +1,85 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WinterMagic",
+				"abbreviation": "WM",
+				"full": "Winter Magic",
+				"url": "",
+				"authors": [
+					"me"
+				],
+				"convertedBy": [me],
+				"version": "unknown"
+			}
+		],
+		"dateAdded": 1612819517,
+		"dateLastModified": 1612819517
+	},
+	"spell": [
+  {
+	"name": "Snowball",
+	"source": "WinterMagic",
+	"page": 1,
+	"level": 1,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 120
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"You conjure a ball of packed ice and snow that you can throw at a single target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d6} cold damage, and must succeed on a Constitution saving throw or be knocked {@condition prone}."
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+			]
+		}
+	],
+	"damageInflict": [
+		"cold"
+	],
+	"savingThrow": [
+		"constitution"
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"areaTags": [
+		"ST"
+	],
+	"conditionInflict": [
+		"prone"
+	]
+}
+					}
+				]
+			}
+		}
+	]
+}
