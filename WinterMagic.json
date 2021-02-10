@@ -9,7 +9,7 @@
 				"authors": [
 					"me"
 				],
-				"convertedBy": [me],
+				"convertedBy": [],
 				"version": "unknown"
 			}
 		],
@@ -76,7 +76,6 @@
 	"conditionInflict": [
 		"prone"
 	]
-}
 					}
 				]
 			}
