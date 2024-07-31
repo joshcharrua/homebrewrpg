@@ -1,0 +1,1180 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Prism5E",
+				"abbreviation": "PRI",
+				"full": "The Prism5E",
+				"authors": [
+					"VPD"
+				],
+				"convertedBy": [
+					"Josh"
+				],
+				"version": "1.1",
+				"color": "75ccfa",
+				"url": "https://www.dmsguild.com/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1683052728,
+		"dateLastModified": 1713958692
+	},
+	"class": [
+		{
+			"name": "Prism",
+			"source": "Prism5E",
+			"classFeatures": [
+				"Project Light|Prism|Prism5E|1",
+                "Read Light|Prism|Prism5E|1",
+                "Unarmored Defense|Prism|Prism5E|1",
+                "Spellcasting|Prism|Prism5E|2",
+				{
+					"classFeature": "Facet|Prism|Prism5E|2",
+					"gainsubclassFeatures": true
+				},
+				"Empathy|Prism|Prism5E|3",
+				"Ability Score Improvement|Prism|Prism5E|4",
+                "Refraction|Prism|Prism5E|5",
+				{
+					"classFeature": "Facet feature|Prism|Prism5E|6",
+					"gainsubclassFeatures": true
+				},
+				"Guiding Light|Prism|Prism5E|7",
+				"Ability Score Improvement|Prism|Prism5E|8",
+				"Know Yourself|Prism|Prism5E|10",
+                {
+					"classFeature": "Facet feature|Prism|Prism5E|11",
+					"gainsubclassFeatures": true
+				},
+				"Ability Score Improvement|Prism|Prism5E|12",
+                "Know Others|Prism|Prism5E|14",
+				{
+					"classFeature": "Facet feature|Prism|Prism5E|15",
+					"gainsubclassFeatures": true
+				},
+				"Ability Score Improvement|Prism|Prism5E|16",
+				"Mass Empathy|Prism|Prism5E|18",
+				"Ability Score Improvement|Prism|Prism5E|19",
+				"Cosmic Unity|Prism|Prism5E|20"
+			],
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"startingProficiencies": {
+				"armor": [],
+				"weapons": [
+					"simple"
+				],
+                "tools": [
+					"{@item calligrapher's supplies|phb}",
+					"{@item glassblower's tools|phb}",
+                    "{@item jeweler's tools|phb}",
+                    "{@item painter's supplies|phb}"
+                ],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"deception",
+								"history",
+								"insight",
+								"medicine",
+								"perception",
+                                "performance",
+                                "persuasion",
+                                "religion"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"default": [
+					"(a) a {@item quarterstaff|phb} and two {@filter dagger|phb} or (b) any {@filter simple weapon|phb}",
+					"(a) {@item entertainer's pack|phb},  or (b) {@item scholar's pack|phb}",
+					"(a) a prismatic focus and (b) one type of {@item artisan's tools|phb} of your choice"
+				],
+				"additionalFromBackground": true,
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+                },
+				"proficienciesGained": {
+					"weapons": [
+						"simple"
+					],
+                    "tools": [
+						"one type of {@item artisan's tools|phb} from the prism list"
+					],
+                    "skills": [
+						{
+                            "choose": {
+								"from": [
+							    "deception",
+								"history",
+								"insight",
+								"medicine",
+								"perception",
+                                "performance",
+                                "persuasion",
+                                "religion"
+							],
+							"count": 1
+
+                        }
+                    }
+                ]
+            }
+        },
+            "subclassTitle": "Facet",
+			"casterProgression": "1/2",
+			"classSpells": [
+				"animal friendship",
+				"bless",
+				"cause fear|XGE",
+				"charm person",
+				"color spray",
+				"command",
+				"detect evil and good",
+				"detect magic",
+				"faerie fire",
+				"guiding bolt",
+				"healing word",
+				"heroism",
+				"sleep",
+				"aid",
+				"blur",
+				"calm emotions",
+				"continual flame",
+				"detect thoughts",
+				"gentle repose",
+				"hold person",
+				"invisibility",
+				"mind spike|XGE",
+				"mirror image",
+				"pass without trace",
+				"pyrotechnics|XGE",
+				"see invisibility",
+				"suggestion",
+				"Tasha's mind whip|TCE",
+				"zone of truth",
+				"beacon of hope",
+				"clairvoyance",
+				"counterspell",
+				"daylight",
+				"dispel magic",
+				"fear",
+				"hypnotic pattern",
+				"major image",
+				"revivify",
+				"speak with plants",
+				"spirit shroud|TCE",
+				"tongues",
+				"charm monster",
+				"compulsion",
+				"confusion",
+				"dominate beast",
+				"fire shield",
+				"greater invisibility",
+				"hallucinatory terrain",
+				"otiluke's resilient sphere",
+				"phantasmal killer",
+				"dawn|XGE",
+				"dominate person",
+				"hallow",
+				"holy weapon|XGE",
+				"modify memory",
+				"synaptic static|XGE",
+				"wall of light|XGE"
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+                        "Influence",
+                        "Spells Known"
+					],
+					"rows": [
+						[
+							1,
+                            0
+						],
+						[
+							1,
+                            3
+						],
+						[
+							2,
+                            4
+						],
+						[
+							2,
+                            4
+						],
+						[
+							3,
+                            5
+						],
+						[
+							3,
+                            5
+						],
+						[
+							4,
+                            6
+						],
+						[
+							4,
+                            6
+						],
+						[
+							5,
+                            7
+						],
+						[
+							5,
+                            7
+						],
+						[
+							6,
+                            8
+						],
+						[
+							6,
+                            8
+						],
+						[
+							7,
+                            9
+						],
+						[
+							7,
+                            9
+						],
+						[
+							8,
+                            10
+						],
+						[
+							8,
+                            10
+						],
+						[
+							9,
+                            11
+						],
+						[
+							9,
+                            11
+						],
+						[
+							10,
+                            12
+						],
+						[
+							10,
+                            12
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Prism}",
+						"{@filter 2nd|spells|level=2|class=Prism}",
+						"{@filter 3rd|spells|level=3|class=Prism}",
+						"{@filter 4th|spells|level=4|class=Prism}",
+						"{@filter 5th|spells|level=5|class=Prism}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"hasFluff": true
+		}
+	],
+	"subclass": [
+		{
+			"name": "Halo Facet",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"shortName": "Halo",
+			"page": 6,
+			"subclassFeatures": [
+				"Halo Facet|Prism|Prism5E|Halo|Prism5E|2",
+				"Ring of Light|Prism|Prism5E|Halo|Prism5E|2",
+				"Aura of Radiance|Prism|Prism5E|Halo|Prism5E|6",
+                "Unified Body|Prism|Prism5E|Halo|Prism5E|11",
+				"Bastion of Recovery|Prism|Prism5E|Halo|Prism5E|15"
+			],
+			"spellcastingAbility": "cha",
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"Cure Wounds"
+						],
+						"5": [
+							"Enhance Ability"
+						],
+						"9": [
+							"Crusader's Mantle"
+						],
+						"13": [
+							"Aura of Purity"
+						],
+						"17": [
+							"Skill Empowerment|XGE"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"Cure Wounds",
+				"Enhance Ability",
+				"Crusader's Mantle",
+				"Aura of Purity",
+				"Skill Empowerment|XGE"
+			]
+		},
+		{
+			"name": "Armament Facet",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"shortName": "Armament",
+			"subclassFeatures": [
+				"Armament Facet|Prism|Prism5E|Armament|Prism5E|2",
+				"Blade of Light|Prism|Prism5E|Armament|Prism5E|2",
+				"Circle of Empathy|Prism|Prism5E|Armament|Prism5E|6",
+				"Entwined Souls|Prism|Prism5E|Armament|Prism5E|11",
+                "Surge of Spirit|Prism|Prism5E|Armament|Prism5E|15"
+			],
+			"casterProgression": "1/2",
+			"spellcastingAbility": "cha",
+            "additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"Protection from Evil and Good"
+						],
+						"5": [
+							"Branding Smite"
+						],
+						"9": [
+							"Spirit Guardians"
+						],
+						"13": [
+							"Banishment"
+						],
+						"17": [
+							"Steel Wind Strike|XGE"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"Protection from Evil and Good",
+				"Branding Smite",
+				"Spirit Guardians",
+				"Banishment",
+				"Steel Wind Strike|XGE"
+			]
+		},
+		{
+			"name": "Void Facet",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"shortName": "Void",
+			"subclassFeatures": [
+				"Void Facet|Prism|Prism5E|Void|Prism5E|2",
+				"Dark Heart|Prism|Prism5E|Void|Prism5E|2",
+				"Life in the Periphery|Prism|Prism5E|Void|Prism5E|6",
+				"Event Horizon|Prism|Prism5E|Void|Prism5E|11",
+                "Engulfing Void|Prism|Prism5E|Void|Prism5E|15"
+			],
+			"casterProgression": "1/2",
+			"spellcastingAbility": "cha",
+            "additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"Arms of Hadar"
+						],
+						"5": [
+							"Darkness"
+						],
+						"9": [
+							"Hunger of Hadar"
+						],
+						"13": [
+							"Shadow of Moil|XGE"
+						],
+						"17": [
+							"Enervation|XGE"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"Arms of Hadar",
+				"Darkness",
+				"Hunger of Hadar",
+				"Shadow of Moil|XGE",
+				"Enervation|XGE"
+			]
+		}
+    ],
+	"classFeature": [
+        {
+			"name": "Project Light",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 5,
+			"level": 1,
+			"entries": [
+				"As a prism, you've mastered the ability to project your inner light as a beam. This can be used in different ways, called Projections which are detailed below. When you use a projection, you must expend one or more influence. Influence is the power of your inner light to affect the light of others. You start with 1 influence and gain more influence as you gain levels in this class, as shown in the Influence column of the Prism table. You regain all spent influence at the start of each of your turns.",
+				{
+					"type": "entries",
+					"name": "Projection Attack",
+					"page": 5,
+					"entries": [
+						"As an action, make a ranged spell attack against a creature you can see within 60 feet of you. You are proficient with this attack, and it uses your Charisma modifier for the attack and damage rolls. On a hit, you roll a number of d6 equal to the influence you spend and deal that much radiant damage to the target + your Charisma modifier."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Projection Barrier",
+					"page": 5,
+					"entries": [
+						"As an action, choose a friendly creature you can see within 30 feet of you. The target becomes enshrouded in a barrier of light. Roll a number of d6 equal to the influence you expended. The target gains that many temporary hit points, which last until the end of your next turn.",
+						"In addition, after rolling initiative, you can use your reaction to immediately spend up to influence maximum to project a barrier onto a creature of your choice within range."
+					]
+				}
+			]
+		},
+        {
+			"name": "Read Light",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 5,
+			"level": 1,
+			"entries": [
+				"Your connection to the light of others allows you to divine their emotional state. As an action, you can attempt to see into the inner light of a creature within 60 feet of you. If that creature is willing, you know the emotional state of the target at that time. If the creature is unwilling, you must make a Charisma check contested by the target's Charisma or Wisdom check (the target chooses whether to resist your intrusion, or attempt to hide its emotions). If you succeed, you know the emotional state of the target. Whether you succeed or not, the target is aware of your attempt and could regard it as a hostile action."
+			]
+		},
+        {
+			"name": "Unarmored Defense",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 5,
+			"level": 1,
+			"entries": [
+				"Your presence can dismantle your assailant's attacks. While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier."
+			]
+		},
+        {
+			"name": "Facet",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 5,
+			"level": 2,
+			"entries": [
+				"At 2nd level, a single facet of your being shines brighter than others, giving you a unique place in the world. Your choice grants you features at 2nd level and again at 6th, 11th, and 15th levels.",
+                "Each facet has a list of associated spells. You gain access to these spells at the levels specified in the facet description. Once you gain access to a facet spell, you always know it. Facet spells don't count against the number of spells you know. If you gain a facet spell that doesn't appear on the prism spell list, the spell counts as a prism spell for you."
+			]
+		},
+        {
+			"name": "Spellcasting",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 5,
+			"level": 2,
+			"entries": [
+				"Starting at 2nd level, you gain the ability to cast spells of 1st level and higher. See {@book chapter 10|PHB|10} of the Player's Handbook for the general rules of spellcasting.",
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"page": 5,
+					"entries": [
+						"The Prism table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st-Level or Higher",
+					"page": 5,
+					"entries": [
+						"You know two 1st-level {@filter Prism spells|spells|class=Prism} of your choice from your prism's spell list. You learn additional spells chosen from your prism's spell list as indicated in the Spells Known column of the Prism table.",
+						"Additionally, when you gain a level in this class, you can choose one of the Prism spells you know and replace it with another spell from your prism's spell list, which also must be of a level for which you have spell slots."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"page": 5,
+					"entries": [
+						"Charisma is your spellcasting ability for your prism spells, since their power derives from the strength of your soul."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"page": 5,
+					"entries": [
+						"Prisms harness the light around them and the magic it holds and focus it through a glass gem known as a prismatic focus."
+					]
+				}
+			]
+		},
+		{
+			"name": "Empathy",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 5,
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level, when you manifest a projection you can expend 1 influence to alter the emotional state of a single creature targeted by that projection. Choose one of the following options. This effect lasts until the start of your next turn, and a creature can only be under the effect of one empathy option at a time. You can ' t influence a creature this way if it is incapable of emotion.",
+				{
+					"type": "entries",
+					"name": "Calm",
+					"page": 5,
+					"entries": [
+						"The first time the target would deal damage, the damage dealt is reduced by half. In addition, the first time damage would be dealt to them, that damage is reduced by half."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Excite",
+					"page": 5,
+					"entries": [
+						"The target can't take reactions. In addition, their movement does not provoke opportunity attacks from any creatures."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Fury",
+					"page": 5,
+					"entries": [
+						"The target can't willingly move further away from the nearest creature hostile to it. In addition, the target gains advantage on Strength checks."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Languor",
+					"page": 5,
+					"entries": [
+						"The first time the target would deal damage, they take psychic damage equal to your Charisma modifier. In addition, the first time damage would be dealt to them by a creature, that creature takes psychic damage equal to your Charisma modifier."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Panic",
+					"page": 5,
+					"entries": [
+						"For every 1 foot of movement the target uses to move closer to the nearest hostile creature, it must spend 2 feet of movement. In addition, for every 1 foot of movement it uses to move away from the nearest hostile creature, it can move twice as far."
+					]
+				}
+			]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+        {
+			"name": "Refraction",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"level": 5,
+			"entries": [
+				"Starting at 5th level, when you use your action to manifest a projection, you can manifest two projections instead of one as part of that action. You can manifest the same projection twice, or two different projections."
+			]
+		},
+		{
+			"name": "Facet feature",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain one feature granted by your Facet."
+			]
+		},
+        {
+			"name": "Guiding Light",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"level": 5,
+			"entries": [
+				"Beginning at 7th level, your interactions with the light of others leaves a trace of your own light behind, a sensor of divination magic. Whenever a creature is affected by a projection you use, or your Read Light feature, a trace of your light is left within them for the next hour and acts as a personal beacon to their location, granting you advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find that creature. You also always know the location of a creature that bears your trace, but only while the two of you are on the same plane of existence."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"level": 8,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+        {
+			"name": "Know Yourself",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"level": 10,
+			"entries": [
+				"At 10th level, your awareness of yourself and the light within you provides a ground point to resist effects that would confound your perception of reality. You gain proficiency in Intelligence saving throws. In addition, Intelligence (Investigation) checks you make to discern the nature of magical illusions, such as the minor illusion spell, are made with advantage as the nature of their light betrays their origin."
+			]
+		},
+		{
+			"name": "Facet feature",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain one feature granted by your Facet."
+			]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"level": 12,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Know Others",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"level": 14,
+			"entries": [
+				"Starting at 14th level, your ability to read the auras of those around you acts as a sixth sense. You always know where a creature within 60 feet of you is located as long as that creature bears a soul, and it can ' t be hidden from you. If the creature is invisible, it gains no benefit from that condition against you. This sight is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. Constructs, undead, and other magically animated objects can't be detected this way. In addition, the mind blank spell hides a creature from this form of detection."
+			]
+		},
+        {
+			"name": "Facet feature",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"level": 15,
+			"entries": [
+				"At 11th level, you gain one feature granted by your Facet."
+			]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"level": 16,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+        {
+			"name": "Mass Empathy",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"level": 18,
+			"entries": [
+				"At 18th level, you have mastered your control over the light around you in such a way that you can alter the emotional state of a crowd to diffuse or incite a situation. As an action on your turn, you expend all your influence to project a wave of empathy centered on yourself. Choose one of the emotional states described in your Empathy feature and up to 10 creatures within 120 feet of you. Each creature chosen becomes affected by the emotional state you chose until the start of your next turn."
+			]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"level": 19,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Cosmic Unity",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"level": 20,
+			"entries": [
+				"Upon reaching 20th level, your soul transcends the cosmic limits of the world around you. You are permanently under the effects of the mind blank spell. As an action, you can touch a creature to transfer the benefits of this spell to that creature for 1 hour, losing the effect on yourself for the duration. At the end of the duration, the benefits transfer back to you. This ends early if you use your action to end the effect, if the target dies, or if the target starts or ends its turn on a different plane of existence."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Halo Facet",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"subclassShortName": "Halo",
+			"subclassSource": "Prism5E",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A prism whose halo facet shines brightest can wreath themselves in light, acting as a beacon in the dark. They choose to follow this path because it most directly shares their light with others. It is the most personal connection that a Prism can form. Allies seek them out on a battlefield to gain their blessings and enemies know to avoid their aura of influence."
+			]
+		},
+		{
+			"name": "Ring of Light",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"subclassShortName": "Halo",
+			"subclassSource": "Prism5E",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Starting at 2nd level, your inner light manifests as a ring of light around your head. The color of its light shifts and changes as your emotions ebb and flow. This ring shines dim light in a 5-foot radius around you. At the start and end of each of your turns, you can suppress the ring and hide it or choose to show it if it was suppressed (no action required).",
+				"As a bonus action on your turn, you can choose a friendly creature within 120 feet of you that you can see and establish a link between your souls. The target gains its own ring of light, which mirrors your own. A target that bears your halo is always considered within range of your projections and spells you cast with a range of touch, as long as it remains within 120 feet of you. In addition, if you cast a prism spell with a range of self, you can choose to have it target the linked creature instead.",
+				"While this link is active, you and the target can communicate telepathically, even if you do not share a language. The link lasts 1 minute, until you link to another creature as a bonus action, or until you choose to end the effect early. If you and the linked target are ever on a different plane of existence, the link is severed immediately. When the link ends, any spells you cast with a range of self that are also affecting the target end."
+			]
+		},
+		{
+			"name": "Aura of Radiance",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"subclassShortName": "Halo",
+			"subclassSource": "Prism5E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, the halo that rests upon on your head becomes a true beacon to others. While your halo is not suppressed, your proficiency bonus is doubled on Charisma checks directed at creatures who are not hostile toward you within 10 feet.",
+				"In addition, as an action on your turn you can cause your halo to burst into a blinding wave of light. Choose a number of creatures up to your Charisma modifier that you can see within 30 feet. Each target must make a Charisma saving throw against your prism spell save DC or become blinded until the end of their next turn.",
+				"Once you use this feature, you must complete a short or long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Unified Body",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"subclassShortName": "Halo",
+			"subclassSource": "Prism5E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Starting at 11th level, your halo bonds your body to those that bear it, as well as the light within you. When the creature who bears your halo takes damage, you can use your reaction to halve the amount of damage taken by that creature. You take the same amount of damage."
+			]
+		},
+        {
+			"name": "Bastion of Resolve",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"subclassShortName": "Halo",
+			"subclassSource": "Prism5E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, your light invigorates the souls of the allies you fight alongside. Friendly creatures within 60 feet of you that can see you and fail a saving throw can use their reaction to succeed on that save instead. A creature can't use their reaction in this way again until it finishes a short or long rest."
+			]
+		},
+		{
+			"name": "Armament Facet",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"subclassShortName": "Armament",
+			"subclassSource": "Prism5E",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Prisms whose armament facet shines brightest can manifest weapons of pure light to strike down their foes. It is an aggressive and evangelical path, and those who follow it seek to impose their light on others. The blade they wield can pass through flesh and cut deep into the soul of its target."
+			]
+		},
+		{
+			"name": "Blade of Light",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"subclassShortName": "Armament",
+			"subclassSource": "Prism5E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Starting at 2nd level, you can manifest your light as a singular weapon. This takes the form of a slender-bladed sword. Its color changes to represent the emotions being felt by the wielder. The light of the weapon shines dim light in a 5-foot radius around it. At the start of each of your turns, you can dismiss the weapon, or choose to reignite it if it was dismissed.",
+				"The weapon counts as a simple melee weapon with which you are proficient. It deals 1d4 radiant damage on a hit, and has the light property. Attacks made with your blade of light use your Charisma modifier for the attack and damage rolls. If you are ever disarmed of this weapon, it disappears immediately and you can use your bonus action to manifest it again in your hand. After taking an action on your turn that involves making a weapon attack with your blade of light, you can use your bonus action to make another melee weapon attack with your blade.",
+				"While wielding this weapon, you learn an additional Project Light option called projection strike, detailed below.",
+				{
+					"type": "entries",
+					"name": "Projection Strike",
+					"entries": [
+						"As an action, make a melee weapon attack with your blade of light. This attack deals 1d6 additional damage for each influence you expended."
+					]
+				}
+			]
+		},
+		{
+			"name": "Circle of Empathy",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"subclassShortName": "Armament",
+			"subclassSource": "Prism5E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you've learned to channel all your emotion into your weapon by gripping it with two hands, creating a circle between it and your soul. Your blade of light gains the versatile property and, while wielded in two hands, deals 1d8 damage instead of 1d4.",
+				"In addition, when you grip this weapon in two hands, you can use a bonus action to project an emotion of your choice from the Empathy feature in a 10-foot radius aura centered on you until the start of your next turn. Each creature that starts its turn in this area must make a Charisma saving throw against your prism spell save DC or succumb to that emotion as if you had influenced it. This effect lasts until the end of their next turn. You can choose to also be affected by this emotional state until the end of your next turn when you use this feature."
+			]
+		},
+		{
+			"name": "Entwined Souls",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"subclassShortName": "Armament",
+			"subclassSource": "Prism5E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Starting at 11th level, your blade can cut deep into the souls of those who share your spirit. You have advantage on weapon attacks made against creatures with whom you share an Empathy feature effect. In addition, when you roll a 1 or 2 on a damage die for a weapon attack against such a creature, you can reroll the die and must use the new roll, even if the new roll is a 1 or 2."
+			]
+		},
+        {
+			"name": "Surge of Spirit",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 7,
+			"subclassShortName": "Armament",
+			"subclassSource": "Prism5E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you can choose to enter a state of focus at the start of one of your turns. When you do, you regain twice your maximum influence. In addition, you can take two additional actions this turn, but these actions must be used to manifest a single projection each.",
+				"Once you enter this state, you must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Void Facet",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 8,
+			"subclassShortName": "Void",
+			"subclassSource": "Prism5E",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"The void prisms act as a dark reflection of any other prism. One of their prime tenets is that the light belongs to them, and should not be shared with others. It is their goal and pursuit to absorb the light into themselves, corrupting it for their own strength. If a creature's light cannot be taken, a void prism will seek to extinguish it for good."
+			]
+		},
+		{
+			"name": "Dark Heart",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 8,
+			"subclassShortName": "Void",
+			"subclassSource": "Prism5E",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Starting at 2nd level, you've learned to manifest a vacuum that absorbs light. You summon a globe of absolute darkness, which fits in the palm of your hand. It is completely void of color, and turns bright light in a 5-foot radius around it into dim light. At the start of each of your turns, you can suppress the globe or recall it into your hand if it was suppressed (no action required).",
+				"When you use your projections, you can choose to drain the light from the target as opposed to imbuing it with your own. As a result, your projection attack deals psychic damage instead of radiant, and your projection barrier drains all color from the area around the target, lightly obscuring the target.",
+				"As long as you are holding the globe, you can take the Hide action as a bonus action. Creatures without darkvision have disadvantage on Wisdom (Perception) checks to notice you while hiding in this way."
+			]
+		},
+		{
+			"name": "Life in the Periphery",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 6,
+			"subclassShortName": "Void",
+			"subclassSource": "Prism5E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 6th level, you've operated in the shadows for so long you seemingly become one with them. You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.",
+				"While in total darkness, a creature that relies on sight can't see you (as if you were invisible), as you are able to bend the light and darkness around you to function as camouflage. In addition, when you are hidden from a creature and miss it with a ranged attack, making the attack doesn't reveal your position."
+			]
+		},
+		{
+			"name": "Event Horizon",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 8,
+			"subclassShortName": "Void",
+			"subclassSource": "Prism5E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+                "Starting at 11th level, you can trap unfortunate souls in the grasp of your globe of darkness. As a bonus action on your turn, you can throw your globe at a creature you can see within 60 feet, detonating it into a singularity that can ensnare the target's soul within it. Make a ranged spell attack using your Charisma modifier for the attack roll. On hit, the creature is restrained by the vacuum left by the globe, feeling its soul pulled into the void. A creature that is restrained in this way can use its action to make a Charisma saving throw against your prism spell save DC, breaking its soul free on a successful save or taking 2d10 psychic damage on a failed one.",
+				"You can return the globe to your hand in its normal form as an action, which breaks free any creature restrained by it."
+			]
+		},
+        {
+			"name": "Engulfing Void",
+			"source": "Prism5E",
+			"className": "Prism",
+			"classSource": "Prism5E",
+			"page": 8,
+			"subclassShortName": "Void",
+			"subclassSource": "Prism5E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+                "At 15th level, you can touch your globe and command it to project a void space as an action. A 30-foot-radius sphere of blackness and bitter cold appears, centered on you. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are blinded. Any noise heard by creatures within the void is muffled and distant, nearly inaudible.",
+				"In addition to creating a void, this area drains the inner light from creatures within it. At the start of each of your turns, you gain 1 additional influence for each other creature inside (maximum of your Charisma modifier). This additional influence must be spent this turn, and can exceed your maximum influence.",
+				"This void space lasts for 1 minute, or until you touch your globe and dismiss it as an action. Once you create a void this way, you must complete a long rest before you can do so again."
+			]
+		}
+    ],
+	"classFluff": [
+		{
+			"name": "Prism",
+			"source": "Prism5E",
+			"entries": [
+				{
+					"type": "section",
+					"name": "Prism",
+					"page": 3,
+					"source": "Prism5E",
+					"entries": [
+                        "The defiant looking halfling appears shrouded in a miasma of menacing red light. As he grips his longsword in each hand, a shockwave bursts forth, engulfing the room in his light. It permeates you, leaving you with the same defiant anger you saw in him, compelling you to fight.",
+                        "The armored elf wields two mithril blades, a crown of golden light rests above his head as he wades into the fray. A bolt of lightning trails each strike of his sword, crashing thunderously against his foe. After the engagement concludes, a robed figure steps from behind a nearby tree. Beneath her hood glimmers a glowing gold circlet that mirrors the elven knight's. They nod knowingly towards one another, and strike out into the night.",
+                        "As the goblin reveler finishes lighting a hooded lantern, a figure moves in her periphery, catching her attention. She turns the light upon the darkness to her left, though it reveals nothing. A figment of her imagination? Certainly. As she goes back on her merry way, the path she was traveling becomes engulfed in darkness, and her lantern light is snuffed out. The joy she had moments ago is siphoned away, leaving an emotionless husk with no care for self-preservation. The figure passes in front of her, giddily laughing with her stolen glee.",
+                        "Whether they're a furious warrior channeling their passion and rage, an impressive figure acting as a beacon of hope, or a mischievous cretin gathering all that light touches, a prism acts as a focusing crystal for the ambient energy and emotion in any situation.",
+						{
+							"type": "entries",
+							"name": "Octarine, the Magic of Light",
+							"page": 3,
+							"entries": [
+								"Inner light is both the source and product of our emotions. What defines a prism is their ability to manifest their own inner light and touch the light of others to create projections and spells. Generally speaking, a prism is a spiritual person but not devoted to a specific deity. They seek divine power from within, from the world around them, and from the light within others.",
+              "Most of a prism's magic is focused on the manipulation of light, energy, and emotions. As a prism grows in power, they specialize into an aspect of the light known as a facet--a single way of interacting with the prismatic world. Some specialize in manifesting hardened light into weapons and tools. Some seek to manipulate the ambient light of the area around them to align everyone to the same emotions. Others selfishly seek to drain the light from the world around them to bolster their own radiance."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Where There Is Light, Darkness",
+							"page": 3,
+							"entries": [
+								"Most adventurers encounter good and evil, law and chaos, and similar dichotomies in their travels. This is also true for prisms. But when they encounter light and dark it is in a very real sense. In many places of the world, manifest as both natural and magical, there are areas of absolute darkness; a place where light goes but no light leaves. This is known as a void, and to most prisms it is considered the ultimate profanity.",
+              "However, not all voids are places. Often times they are concepts, such as an oppressive regime that snuffs out the will and souls of their citizens. Alternatively, some people have a void inside them that consumes the light of others in a vain attempt to feel fulfilled.",
+              "A prism does not shape its life around the pursuit and extermination of such profanities, however. They are simply the yin to a prism's yang: while both exist and recognize the existence of each other as counterparts, a balance must be maintained. Instead, a prism will often spend their life seeking to enlighten people about mastery over their inner lights in an attempt to enable the world to feel and experience to its fullest."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Prism",
+							"page": 4,
+							"entries": [
+								"When making a prism, consider how your character came to understand the nature of souls, the effects of light, and the power of magic. Perhaps your character was born into an order that teaches such discipline from birth, or experienced an emotionally enlightening event that spurred them to pursue that feeling. Perhaps, while training as a magician in the magical arts, they were enraged at a failure and conjured a devastating spell effortlessly.",
+              "Did you always seek adventure, or was adventure thrust upon you by circumstance? Perhaps your birthplace was ravaged by dark forces and you seek to use your power to mend the souls of those affected and snuff out the darkness that caused it.",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+                                        "You can make a prism quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution or Dexterity. Second, choose the {@background sage} or {@background outlander} background."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
